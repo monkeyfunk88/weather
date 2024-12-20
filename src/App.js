@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Navbar, NavItem, Nav, Grid, Row, Col } from "react-bootstrap";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import necessary components
 
 const PLACES = [
   { name: "Palo Alto", zip: "94303" },
@@ -10,6 +11,10 @@ const PLACES = [
   { name: "Honolulu", zip: "96803" }
 ];
 
+function App() {
+  return (
+    <Router basename="/weather"> {/* Replace /yourrepo with /weather */}
+      <div className="App">
 class WeatherDisplay extends Component {
   constructor() {
     super();
@@ -74,6 +79,14 @@ class App extends Component {
       </div>
     );
   }
+}
+        <Routes>
+          <Route path="/" element={<YourOtherComponents />} /> {/* Example route */}
+          {/* Add more routes as needed */}
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
