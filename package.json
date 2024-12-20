@@ -8,6 +8,7 @@
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1"
   },
+  "homepage": "https://monkeyfunk88.github.io/weather",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
@@ -32,8 +33,7 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "homepage": "https://monkeyfunk88.github.io/weather"
+    ]
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"
